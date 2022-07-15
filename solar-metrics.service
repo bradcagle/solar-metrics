@@ -1,0 +1,11 @@
+[Unit]
+Description=Solar Metrics
+After=syslog.target network.target
+
+[Service]
+ExecStart=/usr/local/bin/jbdbms.py -a E0:9F:2A:FD:29:26
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
